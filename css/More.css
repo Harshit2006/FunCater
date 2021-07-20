@@ -1,0 +1,270 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+background-color: #e9f08e;
+background-attachment: fixed;
+background-size: cover;
+font-family: 'Libre Baskerville', serif;
+font-size: 150%;
+/*margin-left: 2%;
+margin-right: 2%;*/
+}
+.header {
+  overflow: hidden;
+  padding: 20px;
+  background-color: white;
+  margin: 0;
+}
+
+.header .logo{
+  font-size: 150%;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+ /* font-size: 150%;*/
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header .header-right a:hover {
+  background-color:rgb(255, 230, 0); 
+  color: black;
+}
+
+.header-right {
+  float: right;
+  /*font-size: 80%;*/
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/*.header h1{
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  font-size: 250%;
+  text-align: center;
+  color:black;
+}
+
+.logo {
+  backface-visibility:hidden;
+  text-align: center;
+}
+
+
+nav a{
+  text-decoration: none;
+  color:black;
+  padding:2%;
+  font-size: x-large;
+  font-style: italic;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav ul {
+  display: grid;
+  grid-gap: 5px;
+  padding: 1% 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  padding: 1px 0px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+}*/
+
+
+.menu ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 3%;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.menu a {
+  background-color: rgb(255, 230, 0);
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+
+[aria-controls="menu-list"] {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0 .5%;
+}
+
+.top {
+  display: grid;
+  grid-gap: 20px;
+  padding: 0 .5%;
+  grid-template-areas:
+    "hero hero cta1"
+    "hero hero cta2"
+}
+
+.hero {
+  grid-area: hero;
+  min-height: 400px;
+  background: white url(back2.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  padding: 50px;
+  display: flex;
+  padding: 0 0.5%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.hero > * {
+  background: rgb(255, 230, 0);
+  padding: 5px;
+}
+
+.cta {
+  background: rgb(255, 230, 0);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.cta p {
+  margin: 0;
+}
+
+.cta1 {
+  grid-area: cta1;
+}
+
+.cta2 {
+  grid-area: cta2;
+}
+
+.price {
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.feature {
+  background: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  padding: 0 0.5%;
+  box-shadow: 0 0 4px  rgba(0,0,0,0.1);
+}
+
+.feature .icon {
+  font-size: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+
+}
+.feature p {
+  color: rgba(0,0,0,0.5);
+  font-size: 100%;
+}
+
+.about {
+  background: white;
+  padding:50px;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+  font-size: 130%;
+  padding: 0 0.5%;
+}
+
+.about img {
+  min-height:auto;
+}
+
+button{
+  background-color: rgb(255, 230, 0);
+  border-radius: 3px;
+  padding: 1%;
+  font-size: large;
+  font-family: 'Libre Baskerville', serif;
+}
+
+footer{
+  background-color: white;
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 2%;
+  padding: 0 0.5%;
+}
+
+footer a {
+  text-decoration: none;
+  padding-left: 5%;
+  color: black;
+}
+
+.follow {
+  padding-right: 5%;
+  font-size: 150%;
+}
+
+.qoutes{
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.love{
+  margin-top: 2%;;
+  margin-bottom: 0cm;
+}
+
+.copyright{
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: rgb(255, 230, 0);
+  cursor: pointer;
+}

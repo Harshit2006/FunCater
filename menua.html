@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dynamic menu</title>
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="css/menua.css"/>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">Fun Cater</a>
+        <div class="header-right">
+          <a class="active" href="index.html">Home</a>
+          <a href="menua.html">My Menu</a>
+          <a href="More.html">More</a>
+          <a href="ContactUs.html">Contact</a>
+        </div>
+    </div>
+    
+    <section class="menu">
+        <!-- title -->
+        <div class="title">
+            <h2>My Menu</h2>
+            <div class="underline"></div>
+        </div>
+
+
+    
+         <div class="btn-container">
+             <!-- id and button names will be added dynamically through js -->
+            <button type="button" class="filter-btn" data-id="all">all</button>
+            <!-- <button type="button" class="filter-btn" data-id="breakfast">breakfast</button>
+            <button type="button" class="filter-btn" data-id="lunch">lunch</button>
+            <button type="button" class="filter-btn" data-id="shake">shake</button> -->
+        </div>  
+
+        <!-- menu items -->
+        <div class="section-center">
+            <!-- single item that has to be used--> 
+            <!-- <article class="menu-item">
+                <img src="./menu-item.jpeg" alt="menuitemsnotloaded" class="photo">
+                <div class="item-info">
+                    <header>
+                        <h4>buttermilk pancakes</h4>
+                        <h4 class="price">$150</h4>
+                    </header>
+                    <p class="item-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima, hic ratione voluptatibus soluta corrupti repellendus sunt voluptas neque a.
+                
+                    </p>
+                </div>
+            </article>
+             end of the single item -->
+            
+        </div>
+    </section>
+    <footer>
+        <h3>FOLLOW US</h3>
+        <div class="follow">
+           <a href="#"> <i class="fab fa-facebook"></i> </a> 
+           <a href="#"> <i class="fab fa-instagram"></i> </a>
+           <a href="#"> <i class="fab fa-twitter"></i> </a> 
+        </div>
+        <div class="qoutes">
+            <div class="love">
+               <p>healthy fast . casual food, crafted with love </p>
+            </div>
+              <div class="copyright"><i class="far fa-copyright"></i><a href="#"> HARSHIT JAISWAL</a> | ALL RIGHT RESERVED</div>
+        </div>
+    </footer>
+    <!-- javascript -->
+    <script src="js/menua.js"></script>
+    
+</body>
+</html>
